@@ -1,11 +1,12 @@
-# Bar App
+# 🍺 Bar Manager App
+Breve descripción: Aplicación integral para la gestión de pedidos, inventario y mesas en establecimientos de hostelería.
 
-## Descripción
+### 🛠 Tecnologías Usadas
+* **Lenguaje:** Dart
+* **Framework:** Flutter
+* **Documentación:** DartDoc
 
-Una aplicación que permite realizar compras de productos de un bar, llevar un control de los gastos totales listar las mesas en las que se han realizado cada una de las compras, asi mismo la App permite editar un pedido, y cancelarlo por completo
-
-### Principales Tecnologías
-
--Flutter/Dart -> Principal Lenguaje
--VisualStudioCode -> IDE 
--GitHub/Git -> Control de Versiones
+### ✨ Características Principales
+* Gestión de comandas en tiempo real.
+* Control de stock de bebidas y raciones.
+* Interfaz intuitiva con validaciones y feedback visual.
