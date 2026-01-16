@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import '../model/product.dart';
-
+/// Página para seleccionar productos.
 class ProductSelectionPage extends StatefulWidget {
   @override
   _ProductSelectionPageState createState() => _ProductSelectionPageState();
 }
-
+/// Estado de la página ProductSelectionPage.
 class _ProductSelectionPageState extends State<ProductSelectionPage> {
   final List<Product> products = [
     Product(nombre: "Café", precio: 1.20),
@@ -19,9 +19,9 @@ class _ProductSelectionPageState extends State<ProductSelectionPage> {
     Product(nombre: "Helado", precio: 2.20),
     Product(nombre: "Agua", precio: 1.00),
   ];
-
+/// Mapa para llevar el conteo de productos seleccionados.
   final Map<String, int> selected = {};
-
+/// Construye la interfaz de usuario de la página.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +61,8 @@ class _ProductSelectionPageState extends State<ProductSelectionPage> {
           );
         },
       ),
+
+      /// Botones para confirmar o cancelar la selección.
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

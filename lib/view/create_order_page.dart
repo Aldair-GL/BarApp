@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import '../ViewModel/create_order_viewmodel.dart';
 import 'product_selection_page.dart';
-
+/// Página para crear una nueva orden.
 class CreateOrderPage extends StatefulWidget {
   @override
   _CreateOrderPageState createState() => _CreateOrderPageState();
 }
-
+/// Estado de la página CreateOrderPage.
 class _CreateOrderPageState extends State<CreateOrderPage> {
   final viewModel = CreateOrderViewModel();
-
+/// Construye la interfaz de usuario de la página.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class _CreateOrderPageState extends State<CreateOrderPage> {
               onChanged: viewModel.updateTableName,
             ),
             SizedBox(height: 16),
-
+/// Botón para añadir productos a la orden.
             ElevatedButton(
               onPressed: () async {
                 final products = await Navigator.push(
@@ -41,10 +41,11 @@ class _CreateOrderPageState extends State<CreateOrderPage> {
               child: Text("Añadir productos"),
             ),
 
+/// Listado de productos seleccionados.
             SizedBox(height: 16),
             Text("Productos seleccionados:",
                 style: TextStyle(fontWeight: FontWeight.bold)),
-
+/// Lista de productos añadidos a la orden.
             Expanded(
               child: ListView.builder(
                 itemCount: viewModel.selectedProducts.length,
@@ -58,12 +59,12 @@ class _CreateOrderPageState extends State<CreateOrderPage> {
                 },
               ),
             ),
-
+/// Mostrar el total de la orden.
             Text("Total: ${viewModel.total.toStringAsFixed(2)} €",
                 style: TextStyle(fontSize: 18)),
 
             SizedBox(height: 16),
-
+/// Botón para ver el resumen de la orden
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(
@@ -74,7 +75,7 @@ class _CreateOrderPageState extends State<CreateOrderPage> {
               },
               child: Text("Ver resumen"),
             ),
-
+/// Botones para cancelar o guardar la orden.
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
