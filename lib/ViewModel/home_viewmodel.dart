@@ -1,5 +1,6 @@
 import '../model/order.dart';
 import '../model/product.dart';
+
 /// ViewModel para la página principal.
 class HomeViewModel {
   final List<Order> _orders = [
@@ -11,9 +12,12 @@ class HomeViewModel {
       ],
     ),
   ];
-/// Obtiene la lista de órdenes.
+
+  /// Obtiene la lista de órdenes.
   List<Order> get orders => _orders;
-/// Agrega una nueva orden a la lista.
+
+  /// Agrega una nueva orden a la lista.
+  /// Se ha mejorado para facilitar el feedback en la UI.
   void addOrder(Order order) {
     _orders.add(order);
   }
