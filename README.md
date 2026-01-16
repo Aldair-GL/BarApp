@@ -1,16 +1,11 @@
-# t3_4
+# Bar App
 
-A new Flutter project.
+## Descripción
 
-## Getting Started
+Una aplicación que permite realizar compras de productos de un bar, llevar un control de los gastos totales listar las mesas en las que se han realizado cada una de las compras, asi mismo la App permite editar un pedido, y cancelarlo por completo
 
-This project is a starting point for a Flutter application.
+### Principales Tecnologías
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Flutter/Dart -> Principal Lenguaje
+-VisualStudioCode -> IDE 
+-GitHub/Git -> Control de Versiones
